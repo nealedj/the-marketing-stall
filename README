@@ -1,0 +1,5 @@
+# Installation
+
+- Install Gulp globally if not already installed - `npm install --global gulp`
+- `npm install`
+- `gulp`

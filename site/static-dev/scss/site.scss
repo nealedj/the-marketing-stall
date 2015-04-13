@@ -1,0 +1,151 @@
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background: repeating-linear-gradient(
+		to right,
+		#00489a,
+		#00489a 70px,
+		#ffffff 70px,
+		#ffffff 140px
+	);
+	height: 100%;
+	width: 100%;
+}
+
+address {
+	font-style: normal;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		background: repeating-linear-gradient(
+			to right,
+			#00489a,
+			#00489a 50px,
+			#ffffff 50px,
+			#ffffff 100px
+		);
+	}
+}
+
+.logo-container {
+	margin: 40px auto;
+	width: 35%;
+}
+
+@media screen and (max-width: 800px) {
+	.logo-container {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.logo-container {
+		width: 80%;
+	}
+}
+
+.contact {
+	background-color: rgba(255, 255, 255, .8);
+	line-height: 1.6em;
+	margin-bottom: 50px;
+	padding: 18px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.contact-wrapper {
+	margin: 0 auto;
+	width: 480px;
+}
+
+.email-container {
+	font-size: 1.6em;
+	letter-spacing: 2px;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+	.contact-wrapper {
+		width: 422px;
+	}
+
+	.email-container {
+		font-size: 1.4em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.contact-wrapper {
+		width: 320px;
+	}
+
+	.email-container {
+		font-size: 1em;
+	}
+}
+
+.social-container {
+	overflow: hidden;
+}
+
+.social-container > span {
+	position: relative;
+}
+
+.social-container .twitter {
+	float: left;
+	left: 30px;
+}
+
+.social-container .facebook {
+	float: right;
+}
+
+.social-container .icon {
+	position: absolute;
+}
+
+.social-container .twitter .icon {
+	background: url("/static/img/twitter-logo.svg") no-repeat top left;
+	padding: 18px 18px 0 18px;
+	top: 2px;
+	left: -30px;
+}
+
+.social-container .facebook .icon {
+	background: url("/static/img/facebook-logo.svg") no-repeat top left;
+	padding: 18px 18px 0 18px;
+	top: 1px;
+	left: -26px;
+}
+
+@media screen and (max-width: 800px) {
+	.social-container {
+		font-size: 1.2em;
+	}
+
+	.social-container .twitter .icon {
+		top: 5px;
+	}
+
+	.social-container .facebook .icon {
+		top: 4px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.social-container {
+		font-size: .8em;
+	}
+}
