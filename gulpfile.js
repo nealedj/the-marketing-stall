@@ -2,6 +2,7 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	rename = require('gulp-rename'),
 	cssmin = require('gulp-cssmin');
+    connect = require('gulp-connect');
 
 var basePaths = {
     src: 'site/static-dev/',
@@ -20,4 +21,10 @@ gulp.task('default', function() {
         .pipe(rename({suffix: '.min'}))
         .pipe(cssmin())
         .pipe(gulp.dest(paths.css));
+});
+
+gulp.task('serve', ['default'], function() {
+    connect.server({
+         root: 'site'
+    });
 });
