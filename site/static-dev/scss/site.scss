@@ -40,18 +40,12 @@ a {
 .logo-container {
 	margin: 40px auto;
 	max-width: 370px;
-	width: 35%;
+	width: 45%;
 }
 
 @media screen and (max-width: 800px) {
 	.logo-container {
-		width: 60%;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.logo-container {
-		width: 80%;
+		width: 70%;
 	}
 }
 
